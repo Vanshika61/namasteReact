@@ -1,0 +1,209 @@
+Chapter 1 - Inception (Starting)
+
+● What is Emmet?
+
+Emmet is a free, open-source tool for web developers that helps you write HTML and CSS code more quickly. It's built into many text editors, including Visual Studio Code (VS Code), and works with a variety of other text editors. Emmet provides abbreviations that translate to multiple lines of code, such as lists, tables, or ordered elements. For example, the abbreviation ul#nav>li.item$*4>a{Item $} expands into <ul id="nav"> <li class="item1"><a href="">Item 1</a></li> <li class="item2"><a href="">Item 2</a></li> <li class="item3"><a href="">Item 3</a></li> <li class="item4"><a href="">Item 4</a></li> </ul>
+
+Emmet is an essential development tool that helps you quickly create repetitive structures like lists, tables, or ordered elements with minimal typing. It is more like a shorthand that translates to multiple lines of HTML or a CSS attribute. Emmet is built-in in many of the text editors like VS Code
+
+
+
+
+● Difference between a Library and Framework?
+
+Both the framework vs library is precoded support programs to develop complex software applications. However, libraries target a specific functionality, while a framework tries to provide everything required to develop a complete application.
+
+Here are some differences between libraries and frameworks:
+
+- Purpose
+Frameworks provide a structure for developing software applications, while libraries can be used to perform specific tasks.
+- Size
+Frameworks are usually larger than libraries and may include more files and classes.
+- Flexibility
+Libraries are usually more flexible than frameworks and can be easily replaced.
+- Control
+When using a library, the developer controls the application flow. When using a framework, the framework controls the flow.
+- Opinionated
+Frameworks are often considered more opinionated than libraries, meaning they limit the developer's ability to customize the application.
+
+for more - https://www.linkedin.com/pulse/difference-between-library-framework-myra-chris/
+
+
+
+
+● What is CDN? Why do we use it?
+
+React CDN is a way to include React in your web application without having to download and install it on your local machine.
+
+A CDN, or content delivery network, is a system of servers distributed around the world that deliver web content to users. CDNs improve the performance of websites and applications by delivering content from the server that is closest to the user. This reduces latency and improves the overall user experience.
+
+There are a number of different CDNs that can be used with React applications. Some popular options include:
+Cloudflare, Amazon CloudFront, Google Cloud CDN, and Microsoft Azure CDN.
+
+There are several reasons why you might want to use React CDN:
+
+- Performance:
+React CDN can improve the performance of your web application by reducing the time it takes to load the React library.
+- Ease of use:
+React CDN is easy to use. You simply need to add a few lines of code to your HTML file to include React.
+- Reliability:
+React CDN is a reliable way to include React in your web application. The React library is hosted on multiple servers around the world, so you can be sure that your application will always be available.
+
+Here are some of the benefits of using React CDN:
+
+- Improved performance:
+React CDN can improve the performance of your web application by reducing the time it takes to load the React library. This is because the React library is hosted on multiple servers around the world, so users can download it from the server that is closest to them.
+- Reduced bandwidth usage:
+React CDN can reduce the bandwidth usage of your web application by serving the React library from a server that is close to the user. This can be especially beneficial for users who are on mobile devices or who have limited internet access.
+- Increased reliability:
+React CDN can increase the reliability of your web application by serving the React library from multiple servers around the world. This means that if one server goes down, the React library will still be available from other servers.
+- Improved security:
+React CDN can improve the security of your web application by serving the React library from a server that is protected by a firewall. This can help to prevent attackers from accessing the React library and compromising your application.
+Overall, React CDN is a great way to improve the performance, reliability, and security of your web application.
+
+
+
+
+● Why is React known as React?
+
+<!-- React is a JavaScript library for building user interfaces. It is declarative, efficient, and flexible. React makes it easy to create interactive UIs by using a component-based approach. -->
+
+The name "React" was chosen because it reflects the core principle of the library: reactivity. React components are reactive, meaning that they can update themselves when their data changes. This makes it easy to create UIs that are fast and responsive.
+
+Here are some of the reasons why React is known as React:
+- Reactivity:
+React components are reactive, meaning that they can update themselves when their data changes. This makes it easy to create UIs that are fast and responsive.
+- Component-based architecture:
+React uses a component-based architecture, which makes it easy to create reusable and maintainable UIs.
+- Virtual DOM:
+React uses a virtual DOM to efficiently update the UI. The virtual DOM is a lightweight representation of the real DOM, and React only updates the real DOM when necessary.
+- One-way data flow:
+React uses one-way data flow, which makes it easy to reason about the state of your application.
+- Large community:
+React has a large and active community, which means that there are many resources available to help you learn and use React.
+
+Overall, React is a powerful and flexible JavaScript library for building user interfaces. It is known for its reactivity, component-based architecture, virtual DOM, one-way data flow, and large community.
+
+
+
+
+● What is crossorigin in script tag?
+
+for reference - https://legacy.reactjs.org/docs/cdn-links.html
+
+The crossorigin attribute is used in HTML <script> tags when you are including external scripts from different origins (domains) and you want to control how the browser handles CORS (Cross-Origin Resource Sharing) requests for those scripts.
+
+CORS is a security feature implemented by web browsers to restrict scripts running in one webpage from making requests to another domain, to prevent potential security vulnerabilities such as Cross-Site Scripting (XSS) attacks.
+
+The crossorigin attribute can have the following values:
+
+- anonymous: This is the default value. It indicates that the script is fetched without sending any credentials (like cookies or HTTP authentication) along with the request. This is suitable for scripts that don't require authentication to be fetched.
+
+- use-credentials: This value indicates that the script is fetched with credentials (like cookies or HTTP authentication) along with the request. This is used when the external script requires authentication to be fetched.
+
+The crossorigin attribute is typically used when loading scripts from a different domain, and it helps to determine how the browser handles potential CORS issues. It's important to set it appropriately to ensure security and proper functioning of your web application.
+
+<!-- In simple language -->
+
+The crossorigin attribute in a <script> tag is used when you include scripts from another website in your own webpage. It helps to manage security by controlling how your browser interacts with those external scripts.
+
+"anonymous": This means the script is fetched without sending any personal information (like cookies) along with the request.
+
+"use-credentials": This means the script is fetched with personal information, like cookies, sent along with the request.
+
+You would use crossorigin="anonymous" for most cases, and crossorigin="use-credentials" when the script needs access to personal information. This attribute helps keep your webpage safe and secure.
+
+
+
+
+● What is diference between React and ReactDOM
+
+Note: In order to work with React in the browsers, we need to include 2 libraries: React and ReactDOM. React library is responsible for creating views and ReactDOM library is responsible to actually render UI in the browser.
+
+React provides the tools and concepts to define component-based user interfaces, ReactDOM handles the task of rendering those interfaces in a web environment. Together, they form the foundation of React web applications.
+
+React and ReactDOM are two important libraries in the React ecosystem. They both play different roles in building user interfaces. React is a JavaScript library for building user interfaces. It is declarative, efficient, and flexible. ReactDOM is a package that renders React components to the DOM.
+
+Here is a table that summarizes the key differences between React and ReactDOM:
+Feature                 React                                                       ReactDOM
+Definition              A JavaScript library for building user interfaces           A package that renders React components to the DOM
+Purpose                 To create reusable components and manage their state        To render React components to the DOM
+Key features            Declarative, efficient, and flexible                        Provides methods for interacting with the DOM
+
+| Example | ```javascript import React from 'react'; const MyComponent = () => { return <div>Hello, world!</div>; }; ReactDOM.render(<MyComponent />, document.getElementById('root')); ``` | ```javascript import ReactDOM from 'react-dom'; const element = <h1>Hello, world!</h1>; ReactDOM.render(element, document.getElementById('root')); ```
+
+In conclusion, React and ReactDOM are both essential libraries for building React applications. React is used to create reusable components and manage their state, while ReactDOM is used to render those components to the DOM.
+
+
+
+
+● What is difference between react.development.js and react.production.js files via CDN?
+
+The development and production versions of the React library are optimized for different environments. The development version is larger in size and includes additional code that is helpful for debugging, such as detailed error messages and warnings.
+
+The production version is smaller in size and does not include the additional debugging code. This makes the production version faster and more efficient, which is important for production environments where performance is critical.
+
+Performance will be much faster in production mode when compared to development mode.
+
+Note - When using a CDN, it is important to use the correct version of the React library for your environment. If you are developing or debugging your application, you should use the development version. If you are deploying your application to production, you should use the production version.
+
+
+
+● what is rel="stylesheet"
+
+The REL attribute is used to define the relationship between the linked file and the HTML document. REL=StyleSheet specifies a persistent or preferred style while REL="Alternate StyleSheet" defines an alternate style. A persistent style is one that is always applied when style sheets are enabled.
+
+The rel attribute defines the relationship between a linked resource and the current document.
+
+
+
+
+● What is async and defer? - see my Youtube video ;)
+
+Async and defer are boolean attributes which are used along with scripts tags to load the external scripts effeciently into our web page.
+
+now we have 3 scenarios 
+first - normal script tag
+second - script tag with async attribute
+third - script tag with defer attribute
+
+when you load a web page then there is two major things happenig in your browser
+● HTML parsing
+● loading of the scripts
+    ○ fetching the scripts from the network
+    ○ Executing the script line by line
+
+for better understanding see image - https://media.licdn.com/dms/image/D5612AQEYCnsZ1f9GFQ/article-cover_image-shrink_600_2000/0/1699370054733?e=2147483647&v=beta&t=MeKuUXk5QMblVoausf5p3swTkBCICOHoRsijQqMfxZE
+
+when should I use what??
+Async attribute does not guaranteed the order of execution of the scripts but defer does.
+
+ex- if you are putting the async attribute in multiple scripts, suppose you have multiple scripts which are deppendent on each other like some are dependent on others and some are dependent on others you have multiple dependent scripts, then using a async tag does not gaurantee that these scripts will be executed in a particular order, that may break your code. In that case you should probably prefer defer.
+
+another ex - suppose you have to load some external scripts, lets take a example of google analytical script or other analytic script, which are quite modular and are independent of our normal code. So in that case it make sense to use a async attribute and not use a defer.
+
+otherwise it is mostly wise to use a defer attribute because defer attribute maintains the order of execution of the scripts.
+
+
+
+
+Coding -
+● Set up all the tools in your laptop
+    ○ VS Code
+    ○ Chrome
+    ○ Extensions of Chrome
+● Create a new Git repo
+● Build your first Hello World program using,
+    ○ Using just HTML
+    ○ Using JS to manipulate the DOM
+    ○ Using React
+        ■ use CDN Links
+        ■ Create an Element
+        ■ Create nested React Elements
+        ■ Use root.render
+● Push code to Github (Theory as well as code)
+● Learn about Arrow Functions before the next class
+
+References:
+- https://beta.reactjs.org/apis/react/createElement
+- https://www.youtube.com/watch?v=IrHmpdORLu8
