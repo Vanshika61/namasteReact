@@ -1,0 +1,5 @@
+- What is Emmet?
+
+Emmet is a free, open-source tool for web developers that helps you write HTML and CSS code more quickly. It's built into many text editors, including Visual Studio Code (VS Code), and works with a variety of other text editors. Emmet provides abbreviations that translate to multiple lines of code, such as lists, tables, or ordered elements. For example, the abbreviation ul#nav>li.item$*4>a{Item $} expands into <ul id="nav"> <li class="item1"><a href="">Item 1</a></li> <li class="item2"><a href="">Item 2</a></li> <li class="item3"><a href="">Item 3</a></li> <li class="item4"><a href="">Item 4</a></li> </ul>
+
+Emmet is an essential development tool that helps you quickly create repetitive structures like lists, tables, or ordered elements with minimal typing. It is more like a shorthand that translates to multiple lines of HTML or a CSS attribute. Emmet is built-in in many of the text editors like VS Code
